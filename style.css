@@ -1,0 +1,222 @@
+#h1{
+  color: rgb(231, 104, 104);
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: normal;
+
+  
+
+
+}
+#h2{
+  color: rgb(136, 136, 39);
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+#div1{
+  font-family: 'Courier New', Courier, monospace;
+  padding-bottom: 25px;
+
+}
+#div2{
+  font-family: 'Courier New', Courier, monospace;
+  padding-bottom: 25px;
+
+}
+#div3{
+  font-family: 'Courier New', Courier, monospace;
+  
+
+}
+body{
+  background-color: aqua;
+    
+  }
+  /* Standard styles for Desktop (default) */
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+/* Styles for Tablets and smaller (768px and down) */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* Stack items vertically */
+  }
+}
+
+/* Styles for Phones (480px and down) */
+@media (max-width: 480px) {
+  body {
+    font-size: 14px; /* Smaller text for small screens */
+  }
+}
+
+#h3,#footContent{
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  color: green;
+  padding-top: 50px;
+
+
+}
+#footContent{
+  text-align: center;
+  font-family: 'Courier New', Courier, monospace;
+  color:rgb(136, 136, 39);
+  padding-top: 50px;
+  
+  
+  
+  
+}
+.button-group{
+  display: flex;
+justify-content: flex-start;
+gap: 15px;
+margin: 20px 0;
+}
+#div4{
+  display: flex;
+align-items: flex-start;
+gap: 40px;
+padding: 20px;
+
+  
+  
+}
+#res-title{
+  font-family: Arial, Helvetica, sans-serif;
+  color:deeppink;
+}
+#res-grade,#res-avg{
+  font-family: 'Courier New', Courier, monospace;
+  color: red;
+
+}
+#res-total{
+  color:red;
+  font-family: 'Courier New', Courier, monospace;
+
+}
+@media screen and (max-width: 600px) {
+  #div4 {
+  flex-direction: column;
+  align-items: center;
+  }
+  }
+
+#totalMarks{
+  background-color: #c0ca33;
+padding: 15px 25px;
+border: none;
+font-weight: bold;
+cursor: pointer;
+min-width: 150px;
+  
+  
+  
+}
+#totalMarks:hover{
+  background-color: rgb(228, 228, 17) ;
+
+}
+#totalMarks:active{
+  background-color: rgb(225, 226, 235);
+}
+#avgGrade,#aboutProgram{
+  background-color: #c0ca33;
+padding: 15px 25px;
+border: none;
+font-weight: bold;
+cursor: pointer;
+min-width: 150px;
+}
+#avgGrade:active{
+  background-color: rgb(225, 226, 235);
+}
+#avgGrade:hover{
+  background-color:rgb(228, 228, 17) ;
+}
+#aboutProgram:hover{
+  background-color:rgb(228, 228, 17) ;
+
+}
+#aboutProgram:active{
+  background-color: rgb(225, 226, 235);
+}
+
+
+  #avgGrade:active{
+    background-color: rgb(225, 226, 235) ;
+  }
+  #input1,#input2,#input3,#input4,#input5,#input6,#input7,#input8,#input9,#input10,#input11,#input12,#agr{
+    border: none;
+    outline: none;
+    background-color: white;
+    
+  }
+  #displayResult{
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    border-radius: 2px;
+    font-weight: bold;
+
+  }
+  #av{
+    color: red;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: larger;
+    border-radius: 2px;
+    font-weight: bold;
+    text-align: center;
+
+  }
+  #div1{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 equal columns */
+    gap: 15px;
+    padding: 20px;
+    
+}
+
+/* Individual box for Label + Input */
+.input-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.input-item label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.input-item input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+/* --- RESPONSIVE MEDIA QUERIES --- */
+
+/* For Tablets (Screens smaller than 900px) */
+@media (max-width: 900px) {
+    #div1{
+        grid-template-columns: repeat(2, 1fr); /* Switch to 2 columns */
+    }
+}
+
+/* For Mobile Phones (Screens smaller than 500px) */
+@media (max-width: 500px) {
+    #div1{
+        grid-template-columns: 1fr; /* Switch to 1 column (Stacking) */
+    }
+    
+    h1 {
+        font-size: 20px; /* Shrinks title on small phones */
+    }
+}

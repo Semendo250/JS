@@ -62,10 +62,16 @@ body{
 
 }
 #footContent{
-  text-align: center;
-  font-family: 'Courier New', Courier, monospace;
-  color:rgb(136, 136, 39);
-  padding-top: 50px;
+   /* Optional: Adds a little styling to your info box */
+   #footContent {
+    margin-top: 15px;
+    padding: 15px;
+    border-left: 4px solid #0078d7;
+    background-color: #f9f9f9;
+    font-family: sans-serif;
+    line-height: 1.5;
+    display: none; /* Keeps it hidden until the button is clicked */
+   }
   
   
   
